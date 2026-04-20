@@ -6,6 +6,7 @@ interface Props {
   alt?: string;
   video?: string;
   link?: string;
+  className?: string;
 }
 
 const WorkImage = (props: Props) => {
@@ -22,7 +23,7 @@ const WorkImage = (props: Props) => {
   };
 
   return (
-    <div className="work-image">
+    <div className={`work-image ${props.className || ""}`}>
       <a
         className="work-image-in"
         href={props.link}

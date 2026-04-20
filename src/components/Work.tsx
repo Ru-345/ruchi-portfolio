@@ -5,35 +5,77 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Veer Real Estate",
+    category: "Real Estate",
+    tools: "TypeScript, Next.js, NestJS, PostgreSQL",
+    image: "/images/veer.png",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "College Management System",
+    category: "College Management System",
+    tools: "TypeScript, React.js, Next.js, NestJS, MongoDB",
+    image: "/images/college-placement.png",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "Scancode",
+    category: "QR Code Generator",
+    tools: "TypeScript, Next.js, NestJS",
+    image: "/images/scancode.png",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "Govarthan Thal",
+    category: "Restaurant ",
+    tools: "Serverless, Next.js, MongoDB",
+    image: "/images/govarthan.png",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Gym Management System",
+    category: "Gym Management System",
+    tools: "TypeScript, Next.js, NestJS, PostgreSQL",
+    image: "/images/gym-management.png",
   },
+  {
+    title: "Avishkar Reality",
+    category: "Real Estate",
+    tools: "TypeScript, Next.js, PostgreSQL",
+    image: "/images/avishkar.png",
+  },
+  {
+    title: "The Crystal Engagement",
+    category: "company website",
+    tools: "TypeScript, Next.js",
+    image: "/images/crystal.png",
+  },
+  {
+    title: "Soni Cosmetics",
+    category: "jewellery website",
+    tools: "TypeScript, Next.js",
+    image: "/images/soni-cosmetics.png",
+  },
+  {
+    title: "SFW Gym",
+    category: "Gym website",
+    tools: "TypeScript, Next.js",
+    image: "/images/sfw-gym.png",
+  },
+  {
+    title: "EverWorld",
+    category: "Visa & Immigration",
+    tools: "HTML, Tailwind CSS, JavaScript",
+    image: "/images/everworld.png",
+  },
+  {
+    title: "LFP Gym",
+    category: "Gym website",
+    tools: "HTML, Tailwind CSS, JavaScript",
+    image: "/images/lfp.png",
+  },
+  // {
+  //   title: "EverWorld",
+  //   category: "Visa & Immigration",
+  //   tools: "TypeScript, Next.js",
+  //   image: "/images/everworld.png",
+  // },
 ];
 
 const Work = () => {
@@ -115,7 +157,11 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      <WorkImage
+                        image={project.image}
+                        alt={project.title}
+                        className="carousel-project-image"
+                      />
                     </div>
                   </div>
                 </div>
